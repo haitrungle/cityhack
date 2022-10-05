@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: hsl(226deg 71% 40%);
+  --secondary-color: hsl(142deg 77% 73%);
+  --highlight-color: #3fa5d4;
+  --selection-bg: rgb(64, 64, 64);
+  --padding: max(calc((100vw - 72rem) / 2), 4rem);
+}
+
+.typewriter {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: pre;
+  border-right: 0.125em solid white;
+  animation: 0.75s steps(1) infinite caret;
+}
+@keyframes caret {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+/* generated from https://www.joshwcomeau.com/gradient-generator?colors=1e40af|86efac&angle=135&colorMode=hcl&precision=2&easingCurve=0.333|1|0.666|0 */
+.gradient-text {
+  background-color: #696eff;
+  background-image: linear-gradient(
+    135deg,
+    hsl(226deg 71% 40%) 0%,
+    hsl(203deg 100% 43%) 39%,
+    hsl(183deg 100% 40%) 61%,
+    hsl(142deg 77% 73%) 100%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: white;
+  -webkit-text-fill-color: white !important;
+  background-image: none !important;
+  background-clip: revert !important;
+  text-shadow: none !important;
+}
+
+.light-hover {
+  @apply opacity-60 transition-opacity hover:opacity-100;
+}
+
+img {
+  user-select: none;
+}

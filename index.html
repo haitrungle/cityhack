@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CityHack 2023</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" href="/img/logo.png" />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+
+  <body class="text-white">
+    <header
+      class="fixed z-20 w-full border-b border-neutral-100/10 py-2 px-[var(--padding)] backdrop-blur"
+    >
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="#">
+            <img
+              src="/img/logo.png"
+              alt="CityHack logo"
+              class="h-12 w-12 invert"
+            />
+          </a>
+        </div>
+        <button
+          data-menu-state="closed"
+          type="button"
+          id="menu-control"
+          class="ml-3 inline-flex items-center rounded-lg p-2 sm:hidden"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open navigation menu</span>
+          <!--Closed menu icon-->
+          <svg
+            class="block h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <!--Opened menu icon-->
+          <svg
+            class="hidden h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <nav class="flex hidden justify-between gap-8 sm:inline-flex">
+          <a class="light-hover font-medium" href="#ABOUT">ABOUT</a>
+          <a class="light-hover font-medium" href="#CATEGORIES">CATEGORIES</a>
+          <a class="light-hover font-medium" href="#TIMELINE">TIMELINE</a>
+          <a class="light-hover font-medium" href="#PEOPLE">PEOPLE</a>
+          <a class="light-hover font-medium" href="#SPONSORS">SPONSORS</a>
+          <a class="light-hover font-medium" href="#FAQ">FAQ</a>
+        </nav>
+      </div>
+      <div class="hidden" id="mobile-menu">
+        <div
+          class="flex h-[calc(100vh-4rem)] flex-col justify-around py-8 text-center text-3xl"
+        >
+          <a class="light-hover font-medium" href="#ABOUT">ABOUT</a>
+          <a class="light-hover font-medium" href="#CATEGORIES">CATEGORIES</a>
+          <a class="light-hover font-medium" href="#TIMELINE">TIMELINE</a>
+          <a class="light-hover font-medium" href="#PEOPLE">PEOPLE</a>
+          <a class="light-hover font-medium" href="#SPONSORS">SPONSORS</a>
+          <a class="light-hover font-medium" href="#FAQ">FAQ</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="starfield" class="absolute inset-0 -z-10">
+        <canvas id="starfield-canvas"></canvas>
+      </div>
+      <div class="relative flex h-screen items-center justify-center">
+        <h1 class="font-black text-8xl">
+          <span class="gradient-text typewriter">CityHack 2023</span>
+        </h1>
+      </div>
+      <section
+        class="space-y-16 bg-zinc-900 py-24 px-[var(--padding)]"
+        id="ABOUT"
+      >
+        <div class="mx-auto max-w-[90ch] text-center">
+          <h2 class="gradient-text pb-4 font-black text-4xl">About CityHack</h2>
+          <p class="text-lg">
+            <span class="font-medium text-[color:var(--highlight-color)]"
+              >CityHack</span
+            >
+            is an annual 24-hour hackathon at by CityU students, during which
+            students will learn, build, and innovate technological solutions
+            together. We have many mentors and various workshops to guide you no
+            matter the major, background, or experience. Join us on this
+            opportunity and have a chance to become the champion.
+          </p>
+        </div>
+        <div class="flex flex-col justify-between gap-y-4 md:flex-row">
+          <div class="text-center">
+            <p class="gradient-text font-bold text-4xl">170</p>
+            <p class="font-medium">participants</p>
+          </div>
+          <div class="text-center">
+            <p class="gradient-text font-bold text-4xl">$30k</p>
+            <p class="font-medium">total prize money</p>
+          </div>
+          <div class="text-center">
+            <p class="gradient-text font-bold text-4xl">4</p>
+            <p class="font-medium">champion teams</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="space-y-20 bg-black py-24 px-[var(--padding)]"
+        id="CATEGORIES"
+      >
+        <div class="mx-auto max-w-[90ch] text-center" id="ABOUT">
+          <h2 class="gradient-text pb-4 font-black text-4xl">
+            Main Categories
+          </h2>
+          <p class="text-lg">TBA</p>
+        </div>
+      </section>
+      <section
+        class="space-y-16 bg-zinc-900 py-24 px-[var(--padding)]"
+        id="TIMELINE"
+      >
+        <div class="mx-auto max-w-[90ch] text-center">
+          <h2 class="gradient-text pb-4 font-black text-4xl">Timeline</h2>
+        </div>
+      </section>
+      <section
+        class="space-y-16 bg-black py-24 px-[var(--padding)]"
+        id="PEOPLE"
+      >
+        <div class="mx-auto max-w-[90ch] text-center">
+          <h2 class="gradient-text pb-4 font-black text-4xl">People</h2>
+          <p class="font-medium text-lg">
+            Helping us to conduct the hackathon are the guest speakers and
+            judges, ranging from industry experts to senior researchers.
+          </p>
+        </div>
+        <div class="flex flex-col justify-between gap-y-8 md:flex-row">
+          <label class="font-bold text-2xl">Speakers</label>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-x-16">
+            <div class="flex items-center gap-x-4 font-medium md:w-56 lg:w-80">
+              <img
+                src="/img/placeholder.jpg"
+                alt="Anime girl"
+                class="w-16 rounded-full"
+              />
+              <div>
+                <p>Dr. John Doe</p>
+                <p class="text-[color:var(--highlight-color)]">
+                  Residence Master, CityU Hall 2
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 font-medium md:w-56 lg:w-80">
+              <img
+                src="/img/placeholder.jpg"
+                alt="Anime girl"
+                class="w-16 rounded-full"
+              />
+              <div>
+                <p>Dr. John Doe</p>
+                <p class="text-[color:var(--highlight-color)]">
+                  Residence Master, CityU Hall 2
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 font-medium md:w-56 lg:w-80">
+              <img
+                src="/img/placeholder.jpg"
+                alt="Anime girl"
+                class="w-16 rounded-full"
+              />
+              <div>
+                <p>Dr. John Doe</p>
+                <p class="text-[color:var(--highlight-color)]">
+                  Residence Master, CityU Hall 2
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between gap-8 md:flex-row">
+          <label class="font-bold text-2xl">Judges</label>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-x-16">
+            <div class="flex items-center gap-x-4 font-medium md:w-56 lg:w-80">
+              <div
+                class="relative z-10 h-16 w-16 flex-none before:absolute before:top-1 before:left-1 before:h-full before:w-full before:bg-[color:var(--highlight-color)]"
+              >
+                <img
+                  src="/img/placeholder-2.png"
+                  alt="Anime girl"
+                  class="absolute inset-0 z-10 h-full w-full object-cover"
+                />
+              </div>
+              <div>
+                <p>Dr. Jane Doe</p>
+                <p class="text-[color:var(--highlight-color)]">
+                  Professor, City University of Hong Kong
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 font-medium md:w-56 lg:w-80">
+              <div
+                class="relative z-10 h-16 w-16 flex-none before:absolute before:top-1 before:left-1 before:h-full before:w-full before:bg-[color:var(--highlight-color)]"
+              >
+                <img
+                  src="/img/placeholder-2.png"
+                  alt="Anime girl"
+                  class="absolute inset-0 z-10 h-full w-full object-cover"
+                />
+              </div>
+              <div>
+                <p>Dr. Jane Doe</p>
+                <p class="text-[color:var(--highlight-color)]">
+                  Residence Master, CityU Hall 2
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 font-medium md:w-56 lg:w-80">
+              <div
+                class="relative z-10 h-16 w-16 flex-none before:absolute before:top-1 before:left-1 before:h-full before:w-full before:bg-[color:var(--highlight-color)]"
+              >
+                <img
+                  src="/img/placeholder-2.png"
+                  alt="Anime girl"
+                  class="absolute inset-0 z-10 h-full w-full object-cover"
+                />
+              </div>
+              <div>
+                <p>Dr. Jane Doe</p>
+                <p class="text-[color:var(--highlight-color)]">
+                  Professor, City University of Hong Kong
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4 font-medium md:w-56 lg:w-80">
+              <div
+                class="relative z-10 h-16 w-16 flex-none before:absolute before:top-1 before:left-1 before:h-full before:w-full before:bg-[color:var(--highlight-color)]"
+              >
+                <img
+                  src="/img/placeholder-2.png"
+                  alt="Anime girl"
+                  class="absolute inset-0 z-10 h-full w-full object-cover backdrop-blur"
+                />
+              </div>
+              <div>
+                <p>Dr. Jane Doe</p>
+                <p class="text-[color:var(--highlight-color)]">
+                  Professor, City University of Hong Kong
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="flex flex-wrap justify-between border-t border-neutral-100/10 bg-black px-[var(--padding)] py-8"
+    >
+      <div>
+        <a href="#">
+          <img
+            src="/img/logo.png"
+            alt="CityHack logo"
+            class="h-16 w-16 invert"
+          />
+        </a>
+      </div>
+      <div
+        class="flex flex-col flex-wrap justify-end gap-8 gap-x-16 md:flex-row"
+      >
+        <div class="space-y-2">
+          <label>Social</label>
+          <div class="flex justify-between gap-x-4">
+            <a href="" class="light-hover">
+              <img
+                src="/img/icons/discord.svg"
+                alt="Discord of CityHack"
+                class="h-4"
+              />
+            </a>
+            <a href="" class="light-hover">
+              <img
+                src="/img/icons/facebook.svg"
+                alt="Facebook page of Hall 2"
+                class="h-4"
+              />
+            </a>
+            <a href="" class="light-hover">
+              <img
+                src="/img/icons/instagram.svg"
+                alt="Instagram of CityHack"
+                class="h-4"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label>Contact</label>
+          <div class="flex justify-between gap-x-4">
+            <a
+              href="mailto:cityhack23@gmail.com"
+              class="light-hover leading-none"
+              >cityhack23@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label>Made with ♥ by</label>
+          <div class="flex justify-between gap-x-4">
+            <a
+              href="https://cityu-hall2.github.io/it/"
+              class="light-hover leading-none"
+              >Hall 2 IT team</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="/scripts/typewriter.js"></script>
+  <script type="module" src="/scripts/starfield.js"></script>
+  <script type="module" src="/scripts/navbar.js"></script>
+</html>
