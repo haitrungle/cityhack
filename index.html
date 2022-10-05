@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
 
-  <body class="text-white bg-black">
+  <body class="bg-black text-white">
     <header
       class="fixed z-20 w-full border-b border-neutral-100/10 py-2 px-[var(--padding)] backdrop-blur"
     >
@@ -78,7 +78,7 @@
       </div>
       <div class="hidden" id="mobile-menu">
         <div
-          class="flex h-[calc(100vh-4rem)] flex-col justify-around py-8 text-center text-3xl"
+          class="flex h-[calc(100vh-4rem)] flex-col justify-around pb-16 text-center text-3xl"
         >
           <a class="light-hover font-medium" href="#ABOUT">ABOUT</a>
           <a class="light-hover font-medium" href="#CATEGORIES">CATEGORIES</a>
@@ -90,7 +90,7 @@
       </div>
     </header>
     <main>
-      <div id="starfield" class="absolute inset-0 -z-10">
+      <div id="starfield" class="absolute inset-0 -z-10 h-screen">
         <canvas id="starfield-canvas"></canvas>
       </div>
       <div class="relative flex h-screen items-center justify-center">
@@ -99,50 +99,50 @@
         </h1>
       </div>
       <section
-        class="space-y-16 bg-zinc-900 py-24 px-[var(--padding)]"
+        class="space-y-12 bg-zinc-900 py-24 px-[var(--padding)]"
         id="ABOUT"
       >
         <div class="mx-auto max-w-[90ch] text-center">
-          <h2 class="gradient-text pb-4 font-black text-4xl">About CityHack</h2>
-          <p class="text-lg">
-            <span class="font-medium text-[color:var(--highlight-color)]"
-              >CityHack</span
-            >
-            is an annual 24-hour hackathon organized by CityU students, during which
-            participants will learn, build, and innovate technological solutions
-            together. We have many mentors and various workshops to guide you no
-            matter the major, background, or experience. Join us on this
-            opportunity and have a chance to become the champion.
+          <h2 class="gradient-text pb-2 font-black text-4xl">About CityHack</h2>
+          <p class="opacity-75 text-base">
+            <span class="text-[color:var(--highlight-color)]">CityHack</span>
+            is an annual 24-hour
+            <span class="text-[color:var(--highlight-color)]">hackathon</span>
+            organized by CityU students, during which participants will learn,
+            build, and innovate technological solutions together. We have many
+            mentors and various workshops to guide you no matter the major,
+            background, or experience. Join us on this opportunity and have a
+            chance to become the champion.
           </p>
         </div>
-        <div class="flex flex-col justify-between gap-y-4 md:flex-row">
+        <div class="flex flex-col justify-between gap-y-12 text-lg md:flex-row">
           <div class="text-center">
-            <p class="gradient-text font-bold text-4xl">170</p>
-            <p class="font-medium">participants</p>
+            <p class="gradient-text font-black text-4xl">170</p>
+            <p class="opacity-75 text-base">participants</p>
           </div>
           <div class="text-center">
-            <p class="gradient-text font-bold text-4xl">$30k</p>
-            <p class="font-medium">total prize money</p>
+            <p class="gradient-text font-black text-4xl">$30k</p>
+            <p class="opacity-75 text-base">total prize money</p>
           </div>
           <div class="text-center">
-            <p class="gradient-text font-bold text-4xl">4</p>
-            <p class="font-medium">champion teams</p>
+            <p class="gradient-text font-black text-4xl">4</p>
+            <p class="opacity-75 text-base">champion teams</p>
           </div>
         </div>
       </section>
       <section
-        class="space-y-20 bg-black py-24 px-[var(--padding)]"
+        class="space-y-12 bg-black py-24 px-[var(--padding)]"
         id="CATEGORIES"
       >
         <div class="mx-auto max-w-[90ch] text-center" id="ABOUT">
-          <h2 class="gradient-text pb-4 font-black text-4xl">
+          <h2 class="gradient-text pb-2 font-black text-4xl">
             Main Categories
           </h2>
           <p class="text-lg">TBA</p>
         </div>
       </section>
       <section
-        class="space-y-16 bg-zinc-900 py-24 px-[var(--padding)]"
+        class="space-y-12 bg-zinc-900 py-24 px-[var(--padding)]"
         id="TIMELINE"
       >
         <div class="mx-auto max-w-[90ch] text-center">
@@ -150,12 +150,12 @@
         </div>
       </section>
       <section
-        class="space-y-16 bg-black py-24 px-[var(--padding)]"
+        class="space-y-12 bg-black py-24 px-[var(--padding)]"
         id="PEOPLE"
       >
         <div class="mx-auto max-w-[90ch] text-center">
-          <h2 class="gradient-text pb-4 font-black text-4xl">People</h2>
-          <p class="font-medium text-lg">
+          <h2 class="gradient-text pb-2 font-black text-4xl">People</h2>
+          <p class="opacity-75 text-base">
             Helping us to conduct the hackathon are the guest speakers and
             judges, ranging from industry experts to senior researchers.
           </p>
