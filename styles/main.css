@@ -16,12 +16,12 @@
   margin: 0 auto;
   overflow: hidden;
   white-space: pre;
-  border-right: 0.125em solid white;
-  animation: 0.75s steps(1) infinite caret;
+  border-right: 0.125em solid transparent;
+  animation: 1s steps(1) 8 caret;
 }
 @keyframes caret {
   50% {
-    border-right-color: transparent;
+    border-right-color: white;
   }
 }
 
@@ -58,4 +58,25 @@
 
 img {
   user-select: none;
+}
+
+.fade-in-up {
+  opacity: 0;
+}
+
+.fade-in-up-animation {
+  animation: fadeInAnimation ease-out 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 4em, -4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }

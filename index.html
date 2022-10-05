@@ -93,7 +93,9 @@
       <div id="starfield" class="absolute inset-0 -z-10 h-screen">
         <canvas id="starfield-canvas"></canvas>
       </div>
-      <div class="relative flex h-screen items-center justify-center">
+      <div
+        class="fade-in-up relative flex h-screen items-center justify-center"
+      >
         <h1 class="font-black text-6xl md:text-8xl">
           <span class="gradient-text typewriter">CityHack 2023</span>
         </h1>
@@ -116,15 +118,15 @@
           </p>
         </div>
         <div class="flex flex-col justify-between gap-y-12 text-lg md:flex-row">
-          <div class="text-center">
+          <div class="fade-in-up text-center">
             <p class="gradient-text font-black text-4xl">170</p>
             <p class="opacity-75 text-base">participants</p>
           </div>
-          <div class="text-center">
+          <div class="fade-in-up text-center">
             <p class="gradient-text font-black text-4xl">$30k</p>
             <p class="opacity-75 text-base">total prize money</p>
           </div>
-          <div class="text-center">
+          <div class="fade-in-up text-center">
             <p class="gradient-text font-black text-4xl">4</p>
             <p class="opacity-75 text-base">champion teams</p>
           </div>
@@ -346,4 +348,5 @@
   <script type="module" src="/scripts/typewriter.js"></script>
   <script type="module" src="/scripts/starfield.js"></script>
   <script type="module" src="/scripts/navbar.js"></script>
+  <script type="module" src="/scripts/fade.js"></script>
 </html>
