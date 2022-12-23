@@ -17,7 +17,7 @@
   overflow: hidden;
   white-space: pre;
   border-right: 0.125em solid transparent;
-  animation: 1s steps(1) 8 caret;
+  animation: 1s steps(1) infinite caret;
 }
 @keyframes caret {
   50% {
@@ -65,7 +65,7 @@ img {
 }
 
 .fade-in-up-animation {
-  animation: fadeInAnimation ease-out 1.5s;
+  animation: fadeInAnimation ease-out 1s 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -73,10 +73,33 @@ img {
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
-    transform: translate3d(0, 4em, -4rem);
+    transform: translate3d(0, 20px, -20px);
   }
   100% {
     opacity: 1;
     transform: none;
   }
+}
+
+/* Title of the timeline events */
+.title {
+  @apply font-bold text-highlight;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  left: -2rem;
+  top: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    hsl(226deg 71% 40%) 0%,
+    hsl(203deg 100% 43%) 39%,
+    hsl(183deg 100% 40%) 61%,
+    hsl(142deg 77% 73%) 100%
+  );
+  border-radius: 999px;
 }
