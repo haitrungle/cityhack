@@ -10,21 +10,6 @@
   --padding: max(calc((100vw - 72rem) / 2), 2rem);
 }
 
-.typewriter {
-  position: relative;
-  width: fit-content;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: pre;
-  border-right: 0.125em solid transparent;
-  animation: 1s steps(1) infinite caret;
-}
-@keyframes caret {
-  50% {
-    border-right-color: white;
-  }
-}
-
 /* generated from https://www.joshwcomeau.com/gradient-generator?colors=1e40af|86efac&angle=135&colorMode=hcl&precision=2&easingCurve=0.333|1|0.666|0 */
 .gradient-text {
   background-color: #696eff;
