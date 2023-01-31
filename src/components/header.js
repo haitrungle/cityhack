@@ -7,7 +7,7 @@ const sectionIDs = [
   "CATEGORIES",
   "TIMELINE",
   "PEOPLE",
-  "SPONSORS",
+  "ORGANIZERS",
   "FAQ",
 ]
 
