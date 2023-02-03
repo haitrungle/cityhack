@@ -27,6 +27,8 @@ const tracks = [
       "How can we use technology to facilitate collaboration in school(s)?",
     ],
     resources: [
+      Link("https://aws.amazon.com/training/awsacademy/", "AWS Academy"),
+      Link("https://aws.amazon.com/education/awseducate/", "AWS Educate"),
       Link("https://canvas.instructure.com/doc/api/", "Canvas LMS API"),
       Link("https://github.com/ManimCommunity/manim/", "Manim"),
       Link("https://developers.google.com/classroom", "Google Classroom API"),

@@ -4,10 +4,10 @@ import { ListIcon, XIcon } from "./icons"
 
 const sectionIDs = [
   "ABOUT",
-  "CATEGORIES",
+  "TRACKS",
   "TIMELINE",
-  "PEOPLE",
   "ORGANIZERS",
+  "SPONSORS",
   "FAQ",
 ]
 
