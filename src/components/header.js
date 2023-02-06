@@ -2,14 +2,7 @@ import { html, reactive } from "@arrow-js/core"
 
 import { ListIcon, XIcon } from "./icons"
 
-const sectionIDs = [
-  "ABOUT",
-  "TRACKS",
-  "TIMELINE",
-  "ORGANIZERS",
-  "SPONSORS",
-  "FAQ",
-]
+const sectionIDs = ["ABOUT", "TRACKS", "TIMELINE", "ORGANIZERS", "SPONSORS"]
 
 const navList = html`
   ${() =>
