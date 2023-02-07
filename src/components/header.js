@@ -5,6 +5,7 @@ import { ListIcon, XIcon } from "./icons"
 const sectionIDs = ["ABOUT", "TRACKS", "TIMELINE", "ORGANIZERS", "SPONSORS"]
 
 const navList = html`
+  <a class="light-hover font-medium" href="https://docs.google.com/forms/d/e/1FAIpQLSdGwpLljINNlZq_-qgVdNH8nqTCaELRFOZWdIB_UeHrsw01Iw/viewform">REGISTER</a>
   ${() =>
     sectionIDs.map(
       (item) =>
