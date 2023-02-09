@@ -44,9 +44,9 @@ const tracks = [
     name: "FinTech",
     description: "Analyze the stock market, improve the banking experience",
     questions: [
-      "Cyber security - security never sleeps",
-      "Green Finance - projects generating environmental benefits",
-      "Digital banking - how to save for tomorrow by enjoying today",
+      "How do the elderly use FinTech to improve their investment and banking experience?",
+      "How could FinTech help with protecting the environment?",
+      "How to encourage teenagers to save for tomorrow with FinTech?",
     ],
     resources: [
       Link("https://www.difitek.com/", "Difitek"),
