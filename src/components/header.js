@@ -12,11 +12,6 @@ const sectionIDs = [
 ]
 
 const navList = html`
-  <a
-    class="font-medium"
-    href="https://docs.google.com/forms/d/e/1FAIpQLSdGwpLljINNlZq_-qgVdNH8nqTCaELRFOZWdIB_UeHrsw01Iw/viewform"
-    >REGISTER</a
-  >
   ${() =>
     sectionIDs.map(
       (item) =>
